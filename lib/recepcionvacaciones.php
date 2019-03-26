@@ -3,7 +3,7 @@ include('vacaciones.php');
 include('constantes.php');
 
 
-$oVacaciones=new Vacaciones($_POST["rut"], $_POST["nombre"], $_POST["cargo"], "", "", "");
+$oVacaciones=new Vacaciones($_POST["rut"], $_POST["nombre"], $_POST["cargo"], $_POST["fechaini"], $_POST["dias"], $_POST["comentario"]);
 if(isset($_SESSION["aVacaciones"])){
     $arrVacaciones=$_SESSION["aVacaciones"];    
 }
@@ -19,3 +19,5 @@ echo "</pre>";
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+ 
